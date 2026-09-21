@@ -1,0 +1,1 @@
+The helper copies selected skills to `.claude/skills` and supplies the small CLAUDE.md import. Keep the shared policy in AGENTS.md. Current native AGENTS behavior varies by version/config; this import is the explicit fallback. See setup/CLIENTS.md for duplicate-discovery handling. [Official instructions](https://code.claude.com/docs/en/memory).

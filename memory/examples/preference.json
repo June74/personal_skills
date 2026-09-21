@@ -1,0 +1,18 @@
+{
+  "id": "synthetic-preference-001",
+  "namespace": "user/global",
+  "kind": "preference",
+  "status": "accepted",
+  "statement": "This synthetic learner prefers one request-flow diagram before complex implementation.",
+  "source_ref": "synthetic demonstration; not a claim about a real user",
+  "source_date": "2026-09-20",
+  "recorded_at": "2026-09-20T00:00:00Z",
+  "valid_from": "2026-09-20",
+  "valid_to": null,
+  "confidence": "user-stated",
+  "supersedes": null,
+  "review_after": "2026-12-19",
+  "expires_at": null,
+  "sensitivity": "synthetic",
+  "links": []
+}

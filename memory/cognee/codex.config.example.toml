@@ -1,0 +1,4 @@
+# EXAMPLE ONLY; unapplied. Enable after local endpoint and permissions are tested.
+[mcp_servers.cognee]
+url = "http://127.0.0.1:8000/mcp"
+enabled = false

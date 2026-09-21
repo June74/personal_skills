@@ -1,0 +1,1 @@
+Use the project-scoped helper in setup/CLIENTS.md. Cursor uses `.agents/skills` here. Inspect compatibility directories for duplicate names before adding Claude copies. Do not also copy into `.cursor/skills`. [Official skills](https://cursor.com/docs/skills).

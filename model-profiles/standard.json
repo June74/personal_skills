@@ -1,0 +1,13 @@
+{
+  "profile": "standard",
+  "kind": "client-neutral guidance; not native configuration",
+  "model_id": null,
+  "task_scope": "Normal vertical feature slice or debugging",
+  "context_budget": "Relevant spec, diagram, tests and bounded tool output",
+  "escalate_when": "Auth/data-loss risk, unresolved tradeoff or repeated failure",
+  "memory_target_tokens": 1000,
+  "teaching_required": true,
+  "verification_required": true,
+  "privacy_rules_unchanged": true,
+  "automatic_parallel_agents": false
+}

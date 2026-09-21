@@ -1,0 +1,14 @@
+{
+  "id": "example-event",
+  "scope": "project/example",
+  "recorded_at": "2026-09-20T00:00:00Z",
+  "client_model": "record actual client/model",
+  "skill_version": "0.2.0",
+  "problem": "describe a verified failure",
+  "evidence_ref": "project file/revision or explicit feedback",
+  "correction": "proposed narrower procedure",
+  "outcome": "not evaluated",
+  "sensitivity": "synthetic",
+  "expires_at": "2026-10-20T00:00:00Z",
+  "status": "candidate"
+}

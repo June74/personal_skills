@@ -1,0 +1,275 @@
+{
+  "note": "Inventory, not an install plan. No executable installers bundled. Recheck versions/advisories/prices before installation.",
+  "components": [
+    {
+      "name": "Git",
+      "when": "foundation",
+      "purpose": "source history",
+      "type": "system/dev",
+      "where": "WSL",
+      "depends_on": "OS",
+      "official_source": "https://git-scm.com/downloads"
+    },
+    {
+      "name": "ripgrep",
+      "when": "foundation",
+      "purpose": "scoped search",
+      "type": "dev",
+      "where": "WSL",
+      "depends_on": "binary",
+      "official_source": "https://github.com/BurntSushi/ripgrep"
+    },
+    {
+      "name": "uv",
+      "when": "Python work",
+      "purpose": "Python/environment/package management",
+      "type": "dev/build",
+      "where": "WSL user tools",
+      "depends_on": "binary, no Python needed to run uv",
+      "official_source": "https://docs.astral.sh/uv/getting-started/installation/"
+    },
+    {
+      "name": "Python 3.13 baseline",
+      "when": "Python work",
+      "purpose": "runtime",
+      "type": "runtime",
+      "where": "project via uv",
+      "depends_on": "compatible OS/wheels",
+      "official_source": "https://devguide.python.org/versions/"
+    },
+    {
+      "name": "pytest + Ruff + mypy",
+      "when": "Python work",
+      "purpose": "behavior/lint/types",
+      "type": "dev",
+      "where": "project .venv",
+      "depends_on": "Python and package wheels",
+      "official_source": "https://docs.astral.sh/uv/guides/projects/"
+    },
+    {
+      "name": "Node 24 LTS + npm",
+      "when": "web/browser",
+      "purpose": "JS/runtime/build tooling",
+      "type": "system/dev",
+      "where": "WSL",
+      "depends_on": "binary, npm bundled",
+      "official_source": "https://nodejs.org/en/about/previous-releases"
+    },
+    {
+      "name": "HTML/CSS/JS",
+      "when": "web",
+      "purpose": "zero-package prototype",
+      "type": "runtime",
+      "where": "project",
+      "depends_on": "browser",
+      "official_source": "https://developer.mozilla.org/en-US/docs/Web"
+    },
+    {
+      "name": "React/TS/Vite/Biome",
+      "when": "substantial stateful UI",
+      "purpose": "components/build/checks",
+      "type": "runtime+dev/build",
+      "where": "project",
+      "depends_on": "Node, types, native build components",
+      "official_source": "https://vite.dev/guide/"
+    },
+    {
+      "name": "Playwright CLI/Test",
+      "when": "web verification",
+      "purpose": "exploration/regression",
+      "type": "dev",
+      "where": "project or isolated CLI",
+      "depends_on": "Node, browser binaries, OS libs; check prerelease coupling",
+      "official_source": "https://playwright.dev/docs/browsers"
+    },
+    {
+      "name": "FastAPI + Uvicorn",
+      "when": "API app",
+      "purpose": "HTTP app + ASGI server",
+      "type": "runtime",
+      "where": "project",
+      "depends_on": "Starlette/Pydantic/HTTP packages",
+      "official_source": "https://fastapi.tiangolo.com/"
+    },
+    {
+      "name": "SQLite",
+      "when": "local data",
+      "purpose": "embedded relational storage",
+      "type": "runtime",
+      "where": "local file",
+      "depends_on": "Python sqlite3 or chosen driver",
+      "official_source": "https://sqlite.org/whentouse.html"
+    },
+    {
+      "name": "PostgreSQL + Psycopg",
+      "when": "shared relational app",
+      "purpose": "database + Python driver",
+      "type": "service/runtime",
+      "where": "local or selected host",
+      "depends_on": "server, libpq or binary wheels, backups",
+      "official_source": "https://www.psycopg.org/psycopg3/docs/basic/install.html"
+    },
+    {
+      "name": "SQLAlchemy + Alembic",
+      "when": "evolving substantial schema",
+      "purpose": "queries/schema history",
+      "type": "runtime+deployment",
+      "where": "project",
+      "depends_on": "chosen driver/database, SQLAlchemy for Alembic",
+      "official_source": "https://docs.sqlalchemy.org/en/20/intro.html"
+    },
+    {
+      "name": "Gitleaks",
+      "when": "before publication",
+      "purpose": "likely secrets",
+      "type": "dev/security",
+      "where": "tools",
+      "depends_on": "binary",
+      "official_source": "https://github.com/gitleaks/gitleaks"
+    },
+    {
+      "name": "OSV-Scanner",
+      "when": "safety phase",
+      "purpose": "known vulnerable versions",
+      "type": "dev/security",
+      "where": "tools",
+      "depends_on": "binary, current advisory data",
+      "official_source": "https://google.github.io/osv-scanner/"
+    },
+    {
+      "name": "Custom voice project",
+      "when": "user-built separately",
+      "purpose": "your own dictation pipeline",
+      "type": "host/model, implementation pending",
+      "where": "decide during your project",
+      "depends_on": "capture, transcription and optional cleanup choices not yet selected",
+      "official_source": null
+    },
+    {
+      "name": "Cognee",
+      "when": "selected memory backend, phase 3",
+      "purpose": "shared graph/vector memory through MCP",
+      "type": "service/dev",
+      "where": "isolated environment",
+      "depends_on": "isolated Python environment, Cognee MCP dependencies, selected extraction/embedding models and local storage; verify chosen release",
+      "official_source": "https://github.com/topoteretes/cognee"
+    },
+    {
+      "name": "Excalidraw / Mermaid",
+      "when": "visual work",
+      "purpose": "sketches/diagrams",
+      "type": "design",
+      "where": "browser/editor",
+      "depends_on": "manual export first, no MCP needed",
+      "official_source": "https://github.com/excalidraw/excalidraw"
+    },
+    {
+      "name": "Penpot / Storybook",
+      "when": "optional design system",
+      "purpose": "maintained design/components",
+      "type": "service/dev",
+      "where": "isolated stack/project",
+      "depends_on": "Penpot services; Storybook framework/builder",
+      "official_source": "https://help.penpot.app/technical-guide/getting-started/"
+    },
+    {
+      "name": "One provider SDK",
+      "when": "AI application",
+      "purpose": "model API",
+      "type": "runtime/model",
+      "where": "project",
+      "depends_on": "endpoint, billing/privacy or compatible local model",
+      "official_source": "https://www.promptfoo.dev/docs/intro/"
+    },
+    {
+      "name": "Ollama",
+      "when": "optional local inference",
+      "purpose": "model serving",
+      "type": "model/service",
+      "where": "one host installation",
+      "depends_on": "weights, RAM/VRAM, model licenses",
+      "official_source": "https://docs.ollama.com/faq"
+    },
+    {
+      "name": "pgvector",
+      "when": "optional evaluated RAG",
+      "purpose": "similarity search",
+      "type": "database/model",
+      "where": "existing PostgreSQL",
+      "depends_on": "compatible extension + embedding model",
+      "official_source": "https://github.com/pgvector/pgvector"
+    },
+    {
+      "name": "Mailpit",
+      "when": "email development",
+      "purpose": "capture test email",
+      "type": "dev/service",
+      "where": "tools",
+      "depends_on": "binary, bind loopback",
+      "official_source": "https://github.com/axllent/mailpit"
+    },
+    {
+      "name": "Semgrep/Syft/Trivy",
+      "when": "optional extra coverage",
+      "purpose": "patterns/inventory/containers",
+      "type": "dev/security",
+      "where": "tools",
+      "depends_on": "reviewed rules/data/artifacts; not all required",
+      "official_source": "https://github.com/anchore/syft"
+    },
+    {
+      "name": "Dependabot OR Renovate",
+      "when": "optional updates",
+      "purpose": "reviewable update proposals",
+      "type": "service/dev",
+      "where": "chosen repository host",
+      "depends_on": "CI/host permissions; choose one",
+      "official_source": "https://github.com/renovatebot/renovate"
+    },
+    {
+      "name": "Unity + optional bridge",
+      "when": "Unity project only",
+      "purpose": "editor/live state",
+      "type": "host/build",
+      "where": "Windows",
+      "depends_on": "editor packages + optional Python/uv bridge",
+      "official_source": "https://github.com/CoplayDev/unity-mcp"
+    },
+    {
+      "name": "Blender + optional bridge",
+      "when": "3D project only",
+      "purpose": "authoring/scripts",
+      "type": "host/build",
+      "where": "Windows",
+      "depends_on": "built-in Python; separate bridge optional",
+      "official_source": "https://github.com/ahujasid/blender-mcp"
+    },
+    {
+      "name": "Expo/React Native",
+      "when": "mobile only",
+      "purpose": "native application",
+      "type": "runtime/build",
+      "where": "target toolchain",
+      "depends_on": "Node, Android SDK/JDK; iOS macOS/Xcode",
+      "official_source": "https://docs.expo.dev/guides/local-app-development/"
+    },
+    {
+      "name": "Tauri",
+      "when": "desktop only",
+      "purpose": "native desktop features",
+      "type": "build/runtime",
+      "where": "target OS",
+      "depends_on": "Rust/Cargo, OS build tools, webview",
+      "official_source": "https://v2.tauri.app/start/prerequisites/"
+    },
+    {
+      "name": "Hosting/email/store accounts",
+      "when": "shipping only",
+      "purpose": "public operation/distribution",
+      "type": "service/infrastructure",
+      "where": "chosen providers",
+      "depends_on": "fees, policies, backups, real operations",
+      "official_source": "https://docs.railway.com/pricing/plans"
+    }
+  ]
+}

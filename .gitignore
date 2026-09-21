@@ -1,0 +1,14 @@
+.venv/
+node_modules/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+private/
+evals/runs/
+playwright/.auth/
+test-results/
+playwright-report/
+*.sqlite*
+*.db

@@ -1,0 +1,22 @@
+{
+  "checks": [
+    {
+      "name": "types",
+      "argv": [
+        "node",
+        "node_modules/typescript/bin/tsc",
+        "--noEmit"
+      ],
+      "timeout_seconds": 120
+    },
+    {
+      "name": "browser tests",
+      "argv": [
+        "node",
+        "node_modules/@playwright/test/cli.js",
+        "test"
+      ],
+      "timeout_seconds": 300
+    }
+  ]
+}

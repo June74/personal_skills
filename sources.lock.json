@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "date": "2026-09-20",
+  "mode": "original authored adaptations; no upstream files downloaded or vendored",
+  "upstream_pin_status": "Reference links are mutable. No upstream commit hash is asserted. Local delivered bytes are pinned in kit-manifest.json.",
+  "sources": [
+    {
+      "skill": "mentor-mode",
+      "url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/teach/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    },
+    {
+      "skill": "clarify-and-spec",
+      "url": "https://github.com/mattpocock/skills/blob/main/skills/productivity/grilling/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    },
+    {
+      "skill": "plan-slices",
+      "url": "https://github.com/obra/superpowers/blob/main/skills/writing-plans/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    },
+    {
+      "skill": "architecture-and-data",
+      "url": "https://github.com/mattpocock/skills/blob/main/skills/engineering/codebase-design/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    },
+    {
+      "skill": "tdd",
+      "url": "https://github.com/mattpocock/skills/blob/main/skills/engineering/tdd/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    },
+    {
+      "skill": "systematic-debugging",
+      "url": "https://github.com/obra/superpowers/blob/main/skills/systematic-debugging/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    },
+    {
+      "skill": "review",
+      "url": "https://github.com/obra/superpowers/blob/main/skills/requesting-code-review/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    },
+    {
+      "skill": "verify",
+      "url": "https://github.com/obra/superpowers/blob/main/skills/verification-before-completion/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    },
+    {
+      "skill": "prototype-ui",
+      "url": "https://github.com/mattpocock/skills/blob/main/skills/engineering/prototype/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    },
+    {
+      "skill": "browser-check",
+      "url": "https://github.com/microsoft/playwright-cli/blob/main/skills/playwright-cli/SKILL.md",
+      "upstream_commit": null,
+      "vendored": false
+    }
+  ],
+  "custom_skills": [
+    "dependency-decision",
+    "security-and-legal-triage"
+  ],
+  "additional_design_sources": [
+    "https://github.com/anthropics/skills/blob/main/skills/frontend-design/SKILL.md",
+    "https://github.com/pbakaus/impeccable/blob/main/.agents/skills/impeccable/SKILL.md"
+  ],
+  "full_evidence": "docs/research/research-audit.md"
+}

@@ -1,0 +1,1 @@
+Use the project-scoped helper in setup/CLIENTS.md. Codex discovers `.agents/skills`; project rules go in `AGENTS.md`. No global configuration or native agent manifest is generated. [Official skills](https://learn.chatgpt.com/docs/build-skills).

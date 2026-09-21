@@ -1,0 +1,13 @@
+{
+  "profile": "frontier",
+  "kind": "client-neutral guidance; not native configuration",
+  "model_id": null,
+  "task_scope": "Difficult diagnosis, architecture alternatives or high-risk review",
+  "context_budget": "Broader cited evidence with explicit scope and cost budget",
+  "escalate_when": "Missing evidence, professional expertise or inability to verify",
+  "memory_target_tokens": 1000,
+  "teaching_required": true,
+  "verification_required": true,
+  "privacy_rules_unchanged": true,
+  "automatic_parallel_agents": false
+}

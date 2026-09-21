@@ -1,0 +1,16 @@
+{
+  "case_id": "select a case id",
+  "kit_version": "0.2.0",
+  "client_model_version": "record actual values",
+  "revision": "record fixture/project revision",
+  "variant": "baseline or candidate",
+  "trial": 1,
+  "status": "not_run",
+  "criteria_results": [],
+  "evidence": [],
+  "teaching_observations": "",
+  "input_tokens": null,
+  "output_tokens": null,
+  "elapsed_seconds": null,
+  "limitations": []
+}

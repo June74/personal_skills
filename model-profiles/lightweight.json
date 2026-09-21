@@ -1,0 +1,13 @@
+{
+  "profile": "lightweight",
+  "kind": "client-neutral guidance; not native configuration",
+  "model_id": null,
+  "task_scope": "One bounded edit or evidence summary",
+  "context_budget": "Few relevant files, one explicit outcome",
+  "escalate_when": "Ambiguous requirements, multi-module reasoning or repeated failed hypothesis",
+  "memory_target_tokens": 1000,
+  "teaching_required": true,
+  "verification_required": true,
+  "privacy_rules_unchanged": true,
+  "automatic_parallel_agents": false
+}
