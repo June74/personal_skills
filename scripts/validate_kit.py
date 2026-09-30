@@ -12,7 +12,7 @@ KIT=Path(__file__).resolve().parents[1]
 def validate_kit(root=KIT):
     errors=[]
     counts={}
-    for group,expected in [('skills',12),('specialist-library',13)]:
+    for group,expected in [('skills',17),('specialist-library',13)]:
         paths=sorted((root/group).glob('*/SKILL.md'))
         counts[group]=len(paths)
         if len(paths)!=expected: errors.append(f'{group}: expected {expected}, found {len(paths)}')

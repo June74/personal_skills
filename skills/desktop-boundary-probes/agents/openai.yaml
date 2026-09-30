@@ -1,0 +1,6 @@
+interface:
+  display_name: "Desktop boundary probes"
+  short_description: "Probe uncertain native desktop behavior"
+  default_prompt: "Use $desktop-boundary-probes for the relevant parts of this task."
+policy:
+  allow_implicit_invocation: true

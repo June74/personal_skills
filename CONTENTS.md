@@ -4,7 +4,7 @@ Start with [START-HERE.md](START-HERE.md). The core is portable instructions; op
 
 | Folder | Purpose |
 |---|---|
-| skills | 12 discoverable core skills |
+| skills | 17 discoverable core skills |
 | specialist-library | 13 optional skills, opt-in |
 | rules | One shared policy |
 | agents | Three client-neutral role contracts |
@@ -117,3 +117,21 @@ Start with [START-HERE.md](START-HERE.md). The core is portable instructions; op
 - [VALIDATION.md](VALIDATION.md)
 - [VERSION](VERSION)
 - [WALKTHROUGH.md](WALKTHROUGH.md)
+
+## Desktop delivery additions
+
+- [docs/research/desktop-delivery-lessons.md](docs/research/desktop-delivery-lessons.md)
+- [setup/DESKTOP-SKILLS.md](setup/DESKTOP-SKILLS.md)
+- [skills/async-side-effect-delivery/SKILL.md](skills/async-side-effect-delivery/SKILL.md)
+- [skills/async-side-effect-delivery/agents/openai.yaml](skills/async-side-effect-delivery/agents/openai.yaml)
+- [skills/desktop-boundary-probes/SKILL.md](skills/desktop-boundary-probes/SKILL.md)
+- [skills/desktop-boundary-probes/agents/openai.yaml](skills/desktop-boundary-probes/agents/openai.yaml)
+- [skills/desktop-project-delivery/SKILL.md](skills/desktop-project-delivery/SKILL.md)
+- [skills/desktop-project-delivery/agents/openai.yaml](skills/desktop-project-delivery/agents/openai.yaml)
+- [skills/desktop-project-delivery/references/workflow.md](skills/desktop-project-delivery/references/workflow.md)
+- [skills/prototype-runtime-wiring/SKILL.md](skills/prototype-runtime-wiring/SKILL.md)
+- [skills/prototype-runtime-wiring/agents/openai.yaml](skills/prototype-runtime-wiring/agents/openai.yaml)
+- [skills/regression-test-credibility/SKILL.md](skills/regression-test-credibility/SKILL.md)
+- [skills/regression-test-credibility/agents/openai.yaml](skills/regression-test-credibility/agents/openai.yaml)
+- [workflows/desktop-project-delivery.md](workflows/desktop-project-delivery.md)
+- [tests/test_desktop_skills.py](tests/test_desktop_skills.py)

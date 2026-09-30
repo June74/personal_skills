@@ -1,0 +1,6 @@
+interface:
+  display_name: "Prototype runtime wiring"
+  short_description: "Connect accepted UI to real application state"
+  default_prompt: "Use $prototype-runtime-wiring for the relevant parts of this task."
+policy:
+  allow_implicit_invocation: true
