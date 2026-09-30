@@ -1,0 +1,6 @@
+interface:
+  display_name: "Desktop project delivery"
+  short_description: "Coordinate desktop feasibility through delivery"
+  default_prompt: "Use $desktop-project-delivery for the relevant parts of this task."
+policy:
+  allow_implicit_invocation: true

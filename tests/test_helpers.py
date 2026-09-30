@@ -35,7 +35,7 @@ class HelperTests(unittest.TestCase):
             result=self.run_helper('prepare_client.py','--client','codex','--project',self.project,'--apply')
             self.assertEqual(result.returncode,0,result.stderr)
         deployed=list((self.project/'.agents/skills').glob('*/SKILL.md'))
-        self.assertEqual(len(deployed),12)
+        self.assertEqual(len(deployed),17)
         self.assertFalse((self.project/'.agents/skills/mobile-release').exists())
     def test_conflict_preserves_file_and_no_partial_writes(self):
         sentinel=self.project/'AGENTS.md';sentinel.write_text('My existing rules')
@@ -46,7 +46,7 @@ class HelperTests(unittest.TestCase):
     def test_specialist_is_opt_in(self):
         result=self.run_helper('prepare_client.py','--client','claude','--project',self.project,'--specialist','mobile-release','--apply')
         self.assertEqual(result.returncode,0,result.stderr)
-        self.assertEqual(len(list((self.project/'.claude/skills').glob('*/SKILL.md'))),13)
+        self.assertEqual(len(list((self.project/'.claude/skills').glob('*/SKILL.md'))),18)
         self.assertEqual((self.project/'CLAUDE.md').read_text(),'@AGENTS.md\n')
     def test_bad_specialist_path_rejected(self):
         result=self.run_helper('prepare_client.py','--client','codex','--project',self.project,'--specialist','../rules','--apply')

@@ -1,11 +1,11 @@
 # Your AI development folder kit
 
 This is the actual first version of the portable layer proposed in your report.
-The 12 core skills have been written as concise, original adaptations. They are not copies of entire upstream frameworks.
+The 17 core skills have been written as concise, original adaptations. They are not copies of entire upstream frameworks.
 
 ## What works as files
 
-- `skills/`: 12 portable skills. Each folder contains a real `SKILL.md`.
+- `skills/`: 17 portable skills. Each folder contains a real `SKILL.md`.
 - `rules/core.md`: the small shared mentoring/engineering policy.
 - `agents/`: three portable role contracts; no automatic agent spawning.
 - `specialist-library/`: 13 optional skills. Kept outside client discovery until needed.

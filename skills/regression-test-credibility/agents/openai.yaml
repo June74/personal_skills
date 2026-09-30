@@ -1,0 +1,6 @@
+interface:
+  display_name: "Regression test credibility"
+  short_description: "Expose false confidence in passing tests"
+  default_prompt: "Use $regression-test-credibility for the relevant parts of this task."
+policy:
+  allow_implicit_invocation: true

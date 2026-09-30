@@ -32,3 +32,11 @@ python -B tests/test_helpers.py
 ```
 
 The helper tests use disposable directories under the OS temp directory, verify their cleanup boundaries, and do not access the network. After you intentionally customize files, integrity hashes will differ; review the changes before making a new release/manifest. Do not treat a checksum as a signature or security assessment.
+
+## Desktop delivery additions — September 30, 2026
+
+- Four focused skills plus a workflow entry skill: 97 total SKILL.md lines.
+- Both Codex and Claude project snapshots retain all five skills, invocation metadata, and the bundled workflow.
+- `python3 -B -m unittest discover -s tests -v`: 18 tests passed.
+- Structural and integrity checks passed; no new runtime dependency.
+- Personal discovery links resolve to the canonical library on this machine. Fresh-client automatic selection and model task quality were not exercised.
